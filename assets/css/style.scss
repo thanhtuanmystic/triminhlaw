@@ -120,6 +120,7 @@ nav .navbar .links li {
   list-style: none;
   padding: 0 1.4rem;
   color: #b2273a;
+  line-height: 10rem;
 }
 nav .navbar .links li:hover {
   color: #000000;
@@ -152,10 +153,10 @@ nav .navbar .links li .arrow {
 }
 nav .navbar .links li .sub-menu {
   position: absolute;
-  top: 12rem;
+  top: 100%;
   left: 0;
   line-height: 7rem;
-  background: #fff;
+  background: #b2273a;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
   border-radius: 0 0 0.4rem 0.4rem;
   display: none;
@@ -164,6 +165,10 @@ nav .navbar .links li .sub-menu {
   -moz-border-radius: 0 0 0.4rem 0.4rem;
   -ms-border-radius: 0 0 0.4rem 0.4rem;
   -o-border-radius: 0 0 0.4rem 0.4rem;
+}
+nav .navbar .links li .sub-menu::before {
+  content: "";
+  background: red;
 }
 nav .navbar .links li:hover .htmlCss-sub-menu,
 nav .navbar .links li:hover .js-sub-menu {
