@@ -895,6 +895,119 @@ nav .navbar .links li:hover .js-sub-menu {
       }
     }
   }
+  .service-box {
+    border-radius: 12px;
+    background-color: #e5e5e5;
+    border: 1px solid #c51931;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2.4rem;
+    height: 100%;
+    text-align: center;
+    width: 90%;
+    .service-name {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      color: #1a191a;
+      font-weight: 800;
+    }
+  }
+  .service-gap {
+    gap: 5rem 0;
+    margin-bottom: 5rem;
+  }
+  .partner-box {
+    border-radius: 12px;
+    filter: drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.19));
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 3rem 6rem;
+    justify-content: space-between;
+    width: 80%;
+    .partner-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4rem;
+      .partner-name {
+        font-size: 6rem;
+        color: #1a191a;
+        font-weight: 800;
+      }
+    }
+
+    .rgb-btn {
+      margin-top: 0;
+      padding: 2rem 3rem;
+      font-size: 2.6rem;
+    }
+  }
+  .partner-table {
+    thead th {
+      background-color: #9d1e30;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid #9d1e30;
+      vertical-align: middle;
+      padding: 0 1rem;
+    }
+    .table-head {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: 800;
+    }
+    .lawyer-img {
+      text-align: center;
+      padding: 2rem 0;
+      img {
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+}
+    }
+    .lawyer-info {
+      .lawyer-name {
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+        color: #b2273a;
+        font-weight: 800;
+      }
+      .list-general {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .laywer-general-info {
+        font-size: 2.4rem;
+        color: #383838;
+        font-weight: 800;
+      }
+    }
+    .active-field {
+      ul
+      {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+      } li {
+        font-size: 2.4rem;
+        color: #383838;
+        font-weight: 800;
+      }
+    }
+  }
   .sidebar {
     .list-cate {
       display: flex;
@@ -1142,6 +1255,33 @@ nav .navbar .links li:hover .js-sub-menu {
     font-size: 2.6rem;
     padding: 2rem 2.6rem;
   }
+  .show-posts .partner-box {
+    width: 90%;
+    padding: 2rem 5rem;
+  }
+  .show-posts .partner-box .partner-info .partner-name {
+    font-size: 4rem;
+  }
+  .show-posts .partner-box .rgb-btn {
+    padding: 1rem 1.6rem;
+  }
+  .show-posts .partner-table .table-head {
+    font-size: 2.4rem;
+  }
+  .show-posts .partner-table .active-field ul li,.show-posts .partner-table .lawyer-info .laywer-general-info {
+    font-size: 1.8rem;
+  }
+  .show-posts .partner-table .lawyer-info .lawyer-name {
+    font-size: 2rem;
+  }
+  .show-posts .partner-table .lawyer-img {
+    img {
+      max-width: 80%;
+    }
+  }
+  .show-posts .partner-table .active-field ul,.show-posts .partner-table .lawyer-info .list-general {
+    gap: 1rem;
+  }
 }
 @media screen and (max-width: 1400px) {
   #intro .intro-board {
@@ -1200,6 +1340,31 @@ nav .navbar .links li:hover .js-sub-menu {
   .show-posts .show-posts-left .post-box .single-image img {
     width: auto;
     height: auto;
+  }
+  .show-posts .partner-box {
+    width: 100%;
+    padding: 1rem 3rem;
+  }
+  .show-posts .partner-box .partner-info .partner-name {
+    font-size: 3rem;
+  }
+  .show-posts .partner-box .rgb-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+  }
+  .show-posts .partner-box .partner-info {
+    gap: 2rem;
+  }
+  .show-posts .partner-table .table-head {
+    font-size: 1.8rem;
+  }
+  .show-posts .partner-table .active-field ul li, .show-posts .partner-table .lawyer-info .laywer-general-info {
+    font-size: 1.6rem;
+  }
+  .show-posts .partner-table thead th {
+    padding: 1rem;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1356,6 +1521,17 @@ nav .navbar .links li:hover .js-sub-menu {
   .show-posts .title {
     text-align: center;
   }
+  .show-posts .service-box {
+    width: 100%;
+  }
+  .show-posts .service-gap {
+    gap: 2rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .show-posts .partner-table .active-field ul {
+    padding: 2rem 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1372,6 +1548,20 @@ nav .navbar .links li:hover .js-sub-menu {
   }
   #lawyers_council .lawyer-name {
     margin-top: 1rem;
+  }
+  .show-posts .service-box .service-name {
+    font-size: 2rem;
+  }
+  .show-posts .partner-box {
+    flex-direction: column-reverse;
+  }
+  .show-posts .partner-box .partner-info {
+    align-items: center;
+  }
+  .show-posts .partner-table .lawyer-info .lawyer-name {
+    font-size: 1.8rem;
+    line-height: normal;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 450px) {
